@@ -123,13 +123,21 @@ Bảng fact được tạo bằng cách join dữ liệu sạch với các bản
 File dashboard: [`dashboard/nyc_airbnb_dashboard.pbix`](./dashboard/nyc_airbnb_dashboard.pbix)  
 Xuất PDF: [`dashboard/nyc_airbnb_dashboard.pdf`](./dashboard/nyc_airbnb_dashboard.pdf)
 
-Dashboard trực quan hóa các chỉ số chính của thị trường Airbnb NYC 2019, bao gồm:
-- Phân bố listing theo khu vực (`neighbourhood_group`)
-- So sánh giá thuê trung bình theo loại phòng
-- Top host có nhiều listing nhất
-- Tỷ lệ các loại phòng (Entire home, Private room, Shared room)
-- Mức độ sẵn sàng cho thuê (`availability_365`)
-- Phân bổ địa lý trên bản đồ NYC
+Dashboard bao gồm bộ lọc tương tác theo **Borough**, **Room Type** và **Price Range**, cùng với các thành phần trực quan sau:
+
+**KPI Cards**
+- **Total Listings** — Tổng số listing (48.884K)
+- **Avg Price** — Giá thuê trung bình ($152.76)
+- **Avg Booking Rate** — Tỷ lệ đặt phòng trung bình (69.10%)
+- **Neighbourhoods** — Tổng số khu phố (221)
+
+**Biểu đồ**
+- **Average Price by Borough** — So sánh giá thuê trung bình theo từng quận (Bar chart)
+- **Room Type Distribution** — Tỷ lệ phân bố loại phòng: Entire home/apt (51.97%), Private room (45.66%), Shared room (2.37%) (Donut chart)
+- **Booking Rate by Borough** — Tỷ lệ đặt phòng theo từng quận (Bar chart)
+- **Listing Count by Price Range** — Số lượng listing phân theo khoảng giá (Bar chart)
+- **Avg Price by Borough & Room Type** — Bảng giá trung bình theo quận và loại phòng (Matrix)
+- **Top Neighbourhoods by Listings** — Top khu phố có nhiều listing nhất (Bar chart)
 
 ---
 
